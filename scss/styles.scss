@@ -1,0 +1,68 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $body_font_family;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    @include display(flex, center, center);
+    background: $body_bg_color;
+
+    main {
+        padding: 2rem;
+        width: 40rem;
+        height: 35rem;
+        background-color: $main_bg_color;
+
+        .color_input_container {
+            height: 5rem;
+            @include display(flex, space-around, center);
+            
+            input {
+                width: 4rem;
+                height: 4rem;
+                border: .2rem solid #ccc;
+                border-radius: 50%; 
+                padding: .4rem;
+                cursor: pointer;
+            }
+        }
+
+        .buttons_container {
+            height: 8rem;
+            @include display(flex, center, center);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            .custom_btn {
+                height: $button_height;
+                width: 8rem;
+            }
+
+            button {
+                cursor: pointer;
+                height: $button_height;
+                width: 3.5rem;
+            }
+        }
+    
+        .printer_container {
+            height: 18rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+    }
+}

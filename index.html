@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Script-->
+    <script src="js/script.js" defer></script>
+
+    <title>Background Generator</title>
+</head>
+
+<body>
+    <main>
+        <div class="color_input_container">
+            <input type="color" id="input_color_1">
+            <input type="color" id="input_color_2">
+        </div>
+        <div class="buttons_container">
+            <button onclick="arrow_btn_clicked('left')"> 
+                <i class="fa-solid fa-arrow-left"></i>
+            </button> 
+            
+            <button onclick="arrow_btn_clicked('bottom')"> 
+                <i class="fa-solid fa-arrow-down"></i>
+            </button> 
+            
+            <button class="custom_btn">
+                <img src="icons/custom_img.svg" width="20px" height="20px">
+            </button>
+
+            <button onclick="arrow_btn_clicked('top')"> 
+                <i class="fa-solid fa-arrow-up"></i>
+            </button> 
+            
+            <button onclick="arrow_btn_clicked('right')"> 
+                <i class="fa-solid fa-arrow-right"></i>
+            </button> 
+        </div>
+        <div class="printer_container">
+            <p id="printer"></p>
+        </div>
+    </main>
+</body>
+
+</html>

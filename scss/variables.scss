@@ -1,0 +1,16 @@
+// Fonts
+$body_font_family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+
+// Bg Colors
+$body_bg_color: hsla(0, 0%, 50%, 0.2);
+$main_bg_color: hsl(0, 0%, 100%);
+
+// Mixin de FlexBox para diminuir o SASS.    
+@mixin display($display, $justify_content, $align_items) {
+    display: $display;
+    justify-content: $justify_content;
+    align-items: $align_items;
+}
+
+// Buttons
+$button_height: 3.5rem;
